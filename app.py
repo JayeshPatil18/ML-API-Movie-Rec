@@ -2,7 +2,7 @@ from flask import Flask,request,jsonify
 import numpy as np
 import pickle
 import requests
-import sys
+# import sys
 
 # Risky Code
 num_parts = 8
@@ -75,7 +75,7 @@ def predict():
         return jsonify({'recommendations':str(movies_json)})
 
     except Exception as e:
-        print(f'Error: {e}', file=sys.stderr)  # Print any error to stderr
+        # print(f'Error: {e}', file=sys.stderr)  # Print any error to stderr
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
