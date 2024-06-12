@@ -4,7 +4,7 @@ import pickle
 import requests
 # import sys
 
-# Risky Code
+# Risky Code added
 num_parts = 8
 combined_parts = []
 for i in range(1, num_parts + 1):
@@ -34,6 +34,7 @@ app = Flask(__name__)
 def recommend(movie):
     index = main_df[main_df['title'] == movie].index[0]
     distances = sorted(list(enumerate(similarity[index])),reverse=True,key = lambda x: x[1])
+    
     movieIds = []
     # Range from 1 to 100
     for i in distances[1:101]:
@@ -47,8 +48,12 @@ def movies(input):
     for i in range(len(input)):
         recommended_movie_ids += recommend(input[i])
 
-    similar_movie_df = main_df[main_df['movie_id'].isin(recommended_movie_ids)].set_index('movie_id')
+
+    similar_movie_df = main_df[main_df['movie_id'].isin(recommended_movie_ids)]
+    similar_movie_df = similar_movie_df.drop_duplicates(subset='movie_id')
+    
     recommended_movie = similar_movie_df.sort_values(by='vote_count', ascending=False)
+
     return recommended_movie
 
 @app.route('/')
