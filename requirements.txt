@@ -4,3 +4,4 @@ scikit-learn
 gunicorn
 requests
 pandas
+flask_cors
