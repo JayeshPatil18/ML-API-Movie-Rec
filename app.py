@@ -82,6 +82,10 @@ def predict():
         return jsonify({'recommendations':str(movies_json)})
 
     except Exception as e:
+
+        if "out of bounds" in str(e):
+            return jsonify({"error": "entered movie on in dataset"}), 49
+            
         # print(f'Error: {e}', file=sys.stderr)  # Print any error to stderr
         return jsonify({"error": str(e)}), 500
 
