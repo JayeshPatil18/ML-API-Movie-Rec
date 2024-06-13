@@ -34,12 +34,12 @@ CORS(app)
 
 # Functions
 def recommend(movie):
-    index = main_df[main_df['title'] == movie].index[0]
+    index = main_df[main_df['title'].str.lower() == movie.lower()].index[0]
     distances = sorted(list(enumerate(similarity[index])),reverse=True,key = lambda x: x[1])
     
     movieIds = []
     # Range from 1 to 100
-    for i in distances[1:101]:
+    for i in distances[1:71]:
         movieIds.append(main_df.iloc[i[0]].movie_id)
     return movieIds
 
