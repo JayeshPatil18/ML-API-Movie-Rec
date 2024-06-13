@@ -2,6 +2,7 @@ from flask import Flask,request,jsonify
 import numpy as np
 import pickle
 import requests
+from flask_cors import CORS
 # import sys
 
 # Risky Code added
@@ -21,6 +22,7 @@ similarity = np.concatenate(combined_parts, axis=0)
 main_df = pickle.load(open('main.pkl','rb'))
 
 app = Flask(__name__)
+CORS(app)
 
 # def fetch_poster(movie_id):
 #     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
@@ -76,7 +78,7 @@ def predict():
         #     print(f'###{poster_url}', file=sys.stderr)
         #     movies_df.at[index, 'poster_path'] = poster_url
 
-        movies_json = movies_df.to_json()
+        movies_json = movies_df.to_json(orient='records')
         return jsonify({'recommendations':str(movies_json)})
 
     except Exception as e:
