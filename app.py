@@ -69,7 +69,7 @@ def predict():
 
     try:
 
-        movies_df = movies(input_movies).head(100)
+        movies_df = movies(input_movies).head(50)
 
         # Fetch Images 
         # for index, row in movies_df.iterrows():
