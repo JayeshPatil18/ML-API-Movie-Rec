@@ -83,8 +83,8 @@ def predict():
 
     except Exception as e:
 
-        if "out of bounds" in str(e):
-            return jsonify({"error": "entered movie on in dataset"}), 49
+        # if "out of bounds" in str(e):
+        #     return jsonify({"error": "entered movie on in dataset"}), 49
 
         # print(f'Error: {e}', file=sys.stderr)  # Print any error to stderr
         return jsonify({"error": str(e)}), 500
