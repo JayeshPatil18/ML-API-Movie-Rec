@@ -1,8 +1,24 @@
-# Movie Recommendation AI Model
+<div align="left">
+  <h1>Movie Recommendation API - ML</h1>
+  <img alt="Flutter" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" style="margin-left: 10px;">
+  <img alt="Dart" src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" style="margin-left: 10px;">
+  <img alt="Firebase" src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" style="margin-left: 10px;">
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" style="margin-left: 10px;">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" style="margin-left: 10px;">
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" style="margin-left: 10px;">
+  <img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" style="margin-left: 10px;">
+  <img alt="Figma" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" style="margin-left: 10px;">
+  <a href="https://github.com/JayeshPatil18/Stock-HIVE">
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" style="margin-left: 10px;">
+  </a>
+</div>
+</br>
 
 Discover your next favorite movie with our AI model! This project uses the TMDB dataset to provide personalized movie recommendations.
 
 [Check it out here!](https://suggestmovie.vercel.app/)
+
+![Available](https://github.com/JayeshPatil18/ML-API-Movie-Rec/blob/main/suggestmovie.png)
 
 ## How to Get Suggestions
 
