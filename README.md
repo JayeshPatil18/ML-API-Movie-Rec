@@ -7,7 +7,6 @@
 <img alt="Numpy" src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" style="margin-left: 10px;">
   <img alt="Machine Learning" src="https://img.shields.io/badge/Machine_Learning-00C49F?style=for-the-badge&logo=machine-learning&logoColor=white" style="margin-left: 10px;">
 <img alt="Artificial Intelligence" src="https://img.shields.io/badge/Artificial_Intelligence-FF6F00?style=for-the-badge&logo=ai&logoColor=white" style="margin-left: 10px;">
-<img alt="Movies" src="https://img.shields.io/badge/Movies-FF0000?style=for-the-badge&logo=movies&logoColor=white" style="margin-left: 10px;">
 <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" style="margin-left: 10px;">
   </a>
 </div>
