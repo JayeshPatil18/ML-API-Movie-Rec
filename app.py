@@ -64,7 +64,7 @@ def index():
     return "Hello world"
 
 @app.route('/movies')
-def index():
+def movies():
     
     try:
         
