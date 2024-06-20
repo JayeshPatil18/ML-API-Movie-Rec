@@ -68,7 +68,7 @@ def movies():
     
     try:
         
-        movies_df = main_d.head(50)
+        movies_df = main_df.head(50)
 
         movies_json = movies_df.to_json(orient='records')
         return jsonify({'recommendations':str(movies_json)})
