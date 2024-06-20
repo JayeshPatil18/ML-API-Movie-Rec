@@ -58,9 +58,25 @@ def movies(input):
 
     return recommended_movie
 
+
 @app.route('/')
 def index():
     return "Hello world"
+
+@app.route('/movies')
+def index():
+    
+    try:
+        
+        movies_df = main_d.head(50)
+
+        movies_json = movies_df.to_json(orient='records')
+        return jsonify({'recommendations':str(movies_json)})
+
+    except Exception as e:
+        
+        return jsonify({"error": str(e)}), 500
+
 
 @app.route('/predict',methods=['POST'])
 def predict():
